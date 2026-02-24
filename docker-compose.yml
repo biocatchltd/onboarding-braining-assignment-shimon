@@ -1,0 +1,12 @@
+# No-auth MongoDB for local development (default mongo:7 image).
+services:
+  mongodb:
+    image: mongo:7
+    container_name: onboarding-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+volumes:
+  mongodb_data:

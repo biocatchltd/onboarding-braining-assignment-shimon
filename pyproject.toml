@@ -8,7 +8,7 @@ packages = [{ include = "app", from = "server" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-fastapi = "^0.115.6"
+fastapi = "==0.142.3"
 uvicorn = { extras = ["standard"], version = "^0.34.0" }
 motor = "^3.6.0"
 pydantic-settings = "^2.6.0"
